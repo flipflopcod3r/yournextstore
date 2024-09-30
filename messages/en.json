@@ -56,8 +56,8 @@
 	},
 	"/": {
 		"hero": {
-			"title": "Freddy leads the way in coolant recycling by eliminating coolant disposal costs and drastically reducing machine downtime",
-			"description": "Explore our carefully selected products for your home and lifestyle.",
+			"title": "Freddy leads the way in coolant recycling ",
+			"description": "by eliminating coolant disposal costs and drastically reducing machine downtime.",
 			"action": "Shop Now",
 			"link": "/category/accessories"
 		}
