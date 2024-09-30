@@ -40,7 +40,7 @@ export default async function Home() {
 						className="rounded"
 						height={450}
 						width={450}
-						src="https%3A%2F%2Ffiles.stripe.com%2Flinks%2FMDB8YWNjdF8xUTJ5NnNRWEtkWmFwUmF0fGZsX3Rlc3RfeVVSaXh5VDlzZ0hMWmpqc1lnNkZ2QXho00feCYfq6F&w=1200&q=75"
+						src="https://files.stripe.com/links/MDB8YWNjdF8xUTJ5NnNRWEtkWmFwUmF0fGZsX3Rlc3RfeVVSaXh5VDlzZ0hMWmpqc1lnNkZ2QXho00feCYfq6F&w=1200&q=75"
 						style={{
 							objectFit: "cover",
 						}}
