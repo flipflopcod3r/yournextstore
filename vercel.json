@@ -1,8 +1,9 @@
 {
 	"version": 2,
 	"env": {
-		"NODE_VERSION": "20.0.0",
+		"NODE_VERSION": "20.17.0",
 		"ENABLE_EXPERIMENTAL_COREPACK": "1"
 	},
-	"buildCommand": "pnpm install"
+	"buildCommand": "pnpm install && pnpm build"
 }
+
