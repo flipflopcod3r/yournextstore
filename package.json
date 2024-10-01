@@ -11,8 +11,6 @@
 		"start": "next start",
 		"lint": "pnpm biome check --write",
 		"test": "vitest",
-		"prepare": "husky",
-		"postinstall": "husky install",
 		"docker:build": "docker build -t yournextstore .",
 		"docker:run": "docker run -d -p 3000:3000 yournextstore"
 	},
