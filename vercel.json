@@ -3,6 +3,5 @@
     "env": {
       "NODE_VERSION": "20.0.0"
     },
-    "buildCommand": "pnpm install",
-    "packageManager": "pnpm@9.10.0"
+    "buildCommand": "pnpm install"
   }
