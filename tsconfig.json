@@ -27,7 +27,8 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"@ui/*": ["./src/ui/*"],
-			"@actions/*": ["./src/actions/*"] // Added this line
+			"@ui/shadcn/*": ["./src/ui/shadcn/*"], // Explicit mapping for shadcn components
+			"@actions/*": ["./src/actions/*"] // Explicit mapping for actions
 		}
 	},
 	"include": [
