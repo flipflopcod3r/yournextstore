@@ -1,10 +1,8 @@
 {
-    "build": {
-      "env": {
-        "NODE_VERSION": "^20.0.0"
-      },
-      "postinstall": "pnpm install"
+    "version": 2,
+    "env": {
+      "NODE_VERSION": "20.0.0"
     },
-    "packageManager": "pnpm"
+    "buildCommand": "pnpm install",
+    "packageManager": "pnpm@9.10.0"
   }
-  
