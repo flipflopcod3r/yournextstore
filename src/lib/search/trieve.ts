@@ -1,3 +1,4 @@
+
 import { unstable_cache } from "next/cache";
 import { cache } from "react";
 import { TrieveSDK } from "trieve-ts-sdk";
@@ -39,3 +40,4 @@ export const getRecommendedProducts = cache(
 			{ tags: ["getRecommendedProducts", `getRecommendedProducts-${productId}`] },
 		)(),
 );
+
