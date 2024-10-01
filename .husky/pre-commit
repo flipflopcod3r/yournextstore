@@ -1,8 +1,1 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-# Run biome check
 pnpm biome check --write --staged --no-errors-on-unmatched --files-ignore-unknown=true
-
-# Run commitlint
-pnpm commitlint --edit $1
