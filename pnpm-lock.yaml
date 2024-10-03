@@ -89,6 +89,9 @@ importers:
       '@vercel/speed-insights':
         specifier: 1.0.12
         version: 1.0.12(next@15.0.0-canary.174(@babel/core@7.25.2)(babel-plugin-react-compiler@0.0.0-experimental-3feb7e4-20240930)(react-dom@19.0.0-rc-2d16326d-20240930(react@19.0.0-rc-2d16326d-20240930))(react@19.0.0-rc-2d16326d-20240930))(react@19.0.0-rc-2d16326d-20240930)
+      autoprefixer:
+        specifier: 10.4.20
+        version: 10.4.20(postcss@8.4.47)
       class-variance-authority:
         specifier: 0.7.0
         version: 0.7.0
@@ -119,6 +122,9 @@ importers:
       next-themes:
         specifier: 0.3.0
         version: 0.3.0(react-dom@19.0.0-rc-2d16326d-20240930(react@19.0.0-rc-2d16326d-20240930))(react@19.0.0-rc-2d16326d-20240930)
+      postcss:
+        specifier: 8.4.47
+        version: 8.4.47
       react:
         specifier: 19.0.0-rc-2d16326d-20240930
         version: 19.0.0-rc-2d16326d-20240930
@@ -213,9 +219,6 @@ importers:
       '@vitejs/plugin-react':
         specifier: 4.3.2
         version: 4.3.2(vite@5.4.8(@types/node@20.16.10))
-      autoprefixer:
-        specifier: 10.4.20
-        version: 10.4.20(postcss@8.4.47)
       babel-plugin-react-compiler:
         specifier: 0.0.0-experimental-3feb7e4-20240930
         version: 0.0.0-experimental-3feb7e4-20240930
@@ -225,9 +228,6 @@ importers:
       lint-staged:
         specifier: 15.2.10
         version: 15.2.10
-      postcss:
-        specifier: 8.4.47
-        version: 8.4.47
       semantic-release:
         specifier: 24.1.2
         version: 24.1.2(typescript@5.6.2)

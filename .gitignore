@@ -8,6 +8,11 @@ src/gql/
 /.pnp
 .pnp.js
 
+# Ignore test setup and test files
+src/setup-tests.ts
+test/
+__tests__/
+
 # testing
 /coverage
 

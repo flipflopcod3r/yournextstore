@@ -41,5 +41,7 @@
 		"**/*.mdx",
 		".next/types/**/*.ts"
 	],
-	"exclude": ["node_modules", "src/script/**/*.ts"]
+	"exclude": [
+		"node_modules", "src/script/**/*.ts",
+	    "commitlint.config.ts"]
 }

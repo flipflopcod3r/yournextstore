@@ -2,9 +2,14 @@
 
 import createNextIntlPlugin from "next-intl/plugin";
 import MDX from "@next/mdx";
+import path from "path";
+import { fileURLToPath } from 'url'; // Import required for file URL handling
 
 const withNextIntl = createNextIntlPlugin();
 const withMDX = MDX();
+
+// Convert import.meta.url to a file path
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -35,17 +40,12 @@ const nextConfig = {
     after: true,
     reactCompiler: true,
   },
-  webpack: (config) => {
-    return {
-      ...config,
-      resolve: {
-        ...config.resolve,
-        extensionAlias: {
-          ".js": [".js", ".ts"],
-          ".jsx": [".jsx", ".tsx"],
-        },
-      },
+  webpack: (config, { isServer }) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, 'src'),
     };
+    return config;
   },
   rewrites: async () => [
     {
