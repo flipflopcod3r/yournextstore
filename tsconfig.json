@@ -10,7 +10,7 @@
 		"noEmit": true,
 		"esModuleInterop": true,
 		"module": "esnext",
-		"moduleResolution": "Bundler",
+		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
@@ -27,9 +27,10 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"@ui/*": ["./src/ui/*"],
-			"@ui/shadcn/*": ["./src/ui/shadcn/*"], // Explicit mapping for shadcn components
-			"@actions/*": ["./src/actions/*"] // Explicit mapping for actions
-		}
+			"@ui/shadcn/*": ["./src/ui/shadcn/*"],
+			"@actions/*": ["./src/actions/*"]
+		},
+		"types": ["node", "@mdx-js/react", "react"]
 	},
 	"include": [
 		"next-fix.d.ts",
@@ -37,6 +38,7 @@
 		"**/*.mjs",
 		"**/*.ts",
 		"**/*.tsx",
+		"**/*.mdx",
 		".next/types/**/*.ts"
 	],
 	"exclude": ["node_modules", "src/script/**/*.ts"]

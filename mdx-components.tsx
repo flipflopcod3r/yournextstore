@@ -1,9 +1,15 @@
-import type { MDXComponents } from "mdx/types";
-import Link, { type LinkProps } from "next/link";
+import type { MDXComponents } from 'mdx/types'
+import Link from "next/link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
-	return {
-		a: (props) => <Link {...(props as LinkProps)} />,
-		...components,
-	};
+  return {
+    a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+      if (href?.startsWith('/')) {
+        return <Link href={href} {...props}>{children}</Link>
+      }
+      return <a href={href} {...props}>{children}</a>
+    },
+    // Add other custom components as needed
+    ...components,
+  }
 }

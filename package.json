@@ -15,7 +15,9 @@
 		"docker:run": "docker run -d -p 3000:3000 yournextstore"
 	},
 	"dependencies": {
-		"@next/mdx": "15.0.0-canary.174",
+		"@mdx-js/mdx": "3.0.1",
+		"@mdx-js/react": "3.0.1",
+		"@next/mdx": "14.2.14",
 		"@radix-ui/react-checkbox": "1.1.1",
 		"@radix-ui/react-collapsible": "1.1.0",
 		"@radix-ui/react-dialog": "1.1.1",
@@ -85,7 +87,6 @@
 		"babel-plugin-react-compiler": "0.0.0-experimental-3feb7e4-20240930",
 		"husky": "9.1.6",
 		"lint-staged": "15.2.10",
-		"mdx": "0.3.1",
 		"postcss": "8.4.47",
 		"semantic-release": "24.1.2",
 		"sharp": "0.33.5",
@@ -109,7 +110,10 @@
 				"react-dom": "19.0.0-rc-2d16326d-20240930",
 				"@stripe/stripe-js": "4.1.0"
 			},
-			"allowAny": ["@types/react", "@types/react-dom"]
+			"allowAny": [
+				"@types/react",
+				"@types/react-dom"
+			]
 		}
 	},
 	"engines": {
@@ -118,7 +122,9 @@
 	},
 	"packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
 	"release": {
-		"branches": ["main"],
+		"branches": [
+			"main"
+		],
 		"plugins": [
 			"@semantic-release/commit-analyzer",
 			"@semantic-release/release-notes-generator",
@@ -129,6 +135,8 @@
 		]
 	},
 	"lint-staged": {
-		"*": ["pnpm biome check --write --staged --no-errors-on-unmatched --files-ignore-unknown=true"]
+		"*": [
+			"pnpm biome check --write --staged --no-errors-on-unmatched --files-ignore-unknown=true"
+		]
 	}
 }

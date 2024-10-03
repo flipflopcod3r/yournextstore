@@ -66,12 +66,31 @@
 	}
 }
 
+@layer components {
+	.border-border {
+		border-color: var(--border); /* Custom border color */
+	}
+
+	.bg-background {
+		background-color: var(--background); /* Custom background color */
+	}
+
+	.text-foreground {
+		color: var(--foreground); /* Custom text color */
+	}
+
+	.text-destructive {
+		color: var(--destructive); /* Custom text color for destructive elements */
+	}
+}
+
 @layer base {
 	* {
-		@apply border-border;
+		@apply border-border; /* Apply the border color */
 	}
+
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground; /* Apply background and text color */
 	}
 }
 
@@ -93,16 +112,18 @@
 label:has([required]) > span:first-child {
 	&::after {
 		content: "*";
-		@apply ml-1 text-destructive;
+		@apply ml-1 text-destructive; /* Use the defined text-destructive class */
 	}
 }
 
 .CollapsibleContent {
 	overflow: hidden;
 }
+
 .CollapsibleContent[data-state="open"] {
 	animation: slideDown 250ms ease-in-out;
 }
+
 .CollapsibleContent[data-state="closed"] {
 	animation: slideUp 250ms ease-in-out;
 }
