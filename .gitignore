@@ -9,7 +9,6 @@ src/gql/
 .pnp.js
 
 # Ignore test setup and test files
-src/setup-tests.ts
 test/
 __tests__/
 

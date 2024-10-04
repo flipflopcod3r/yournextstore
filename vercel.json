@@ -4,6 +4,6 @@
 	  "NODE_VERSION": "20.17.0",
 	  "ENABLE_EXPERIMENTAL_COREPACK": "1"
 	},
-	"buildCommand": "pnpm install && pnpm build"
+	"buildCommand": "pnpm install --production=false && pnpm build"
   }
   
